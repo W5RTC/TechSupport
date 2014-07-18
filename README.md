@@ -10,12 +10,15 @@ permission.
 
 Defect Raising Guidelines:
 
-The following protocol has to be followed while providing  details of the defects:
+The following protocol has to be followed while providing  details of the defects when new issue is created:
 
-W5RTC Product Name:
-W5RTC Product Version:
-Problem Description:
-Steps to Reproduce:
-Other Details:
+Title : Enter the high level description of the problem in the github title textbox.
+Write : Enter the following details in the github write textbox
 
+      W5RTC Product Name:
+      W5RTC Product Version:
+      Problem Description:
+      Steps to Reproduce:
+      Other Details:
 
+Thank you for raising a defect! 
