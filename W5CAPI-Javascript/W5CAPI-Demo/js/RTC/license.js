@@ -1,0 +1,1 @@
+document.capikey="PUT YOUR LICENSE KEY HERE";

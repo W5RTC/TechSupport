@@ -1,0 +1,29 @@
+
+{
+    "name" : "W5Capi screen capture",
+    "author": "W5RTC",
+    "version" : "1.0",
+    "manifest_version" :2,
+    "minimum_chrome_version": "34",
+    "description" : "Screen Capture extension for W5Capi",
+    "homepage_url": "https://www.w5rtc.in",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [ {
+       "js": [ "bridge.js" ],
+       "all_frames": true,
+       "run_at": "document_start",
+       "matches": ["https://stagew5cdn.w5rtc.in/","*://*.w5rtc.in/*"]
+    }],
+    "icons" : {
+        "48" : "icon.png"
+    },
+    "permissions": [
+        "desktopCapture"
+    ],
+    "web_accessible_resources": [
+        "icon.png"
+    ]
+}

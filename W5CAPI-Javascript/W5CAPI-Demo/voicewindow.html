@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>...::Welcome to W5rtc::...</title>
+	<link href="image/favicon.png" rel="shortcut icon" type="image/x-icon" />
+	<link href="css/w5rtc.css" rel="stylesheet" type="text/css" />
+	<link href="css/buttons.css" rel="stylesheet" type="text/css" />
+	<link href="css/getMediaElement.css" rel="stylesheet" type="text/css" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+	<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/license.js"></script>
+	<script type="text/javascript" src="js/showdivallpages.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.1/ZeroClipboard.Core.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/zeroclipboard/2.1.1/ZeroClipboard.min.js"></script>
+       <script src='js/jquery.noty.packaged.min.js'></script>
+    <script src="js/demo-traditional.js"></script>
+    <script src="js/fix.js"></script>
+	<script>
+	function emailvalidate()
+	{
+		var email = document.getElementById('user_search');
+    var filter = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	if(email.value=="")
+	{
+		var n = noty({
+            text        : 'Enter one valid Email Address',       
+            type        : 'information',
+            dismissQueue: true,
+            layout      : 'topCenter',
+            theme       : 'defaultTheme',
+				buttons     : [{addClass: 'btn btn-primary', text: 'Ok', 
+							onClick: function ($noty) {
+                    $noty.close();
+                }
+				}]
+        });
+	}
+    else if (!filter.test(email.value)) {
+     var n = noty({
+            text        : 'Enter only one valid Email Address',       
+            type            : 'information',
+            dismissQueue: true,
+            layout      : 'topCenter',
+            theme       : 'defaultTheme',
+				buttons     : [{addClass: 'btn btn-primary', text: 'Ok', 
+							onClick: function ($noty) {
+                    $noty.close();
+                }
+				}]
+        });
+    email.focus;
+    return false;
+ }
+ else{
+	 var link = 'mailto:'+document.getElementById("user_search").value+'?subject=W5RTC Invitation For Voice Call '
+             +'&body=Copy and Paste the provided Link in your Browser to Test:'+ escape(document.getElementById('user_name1').value);	 
+    window.location.href = link;
+	}
+	document.getElementById('starttalkdtndiv').style.display='block';
+	}
+	</script>
+	<script>
+	function copysend(){
+		if(document.getElementById('user_name1').value==""){
+			document.getElementById('copyid').disabled='true';
+			document.getElementById('starttalkdtndiv').style.display='none';
+		}
+		else{
+			document.getElementById('copyid').disabled='false';
+			document.getElementById('starttalkdtndiv').style.display='block';
+		}
+	}	
+	</script>
+</head>
+
+<body>
+<div class="boxchatwindowdiv">
+<div class="allsidepadding">
+<div class="large-12 marginautodiv">
+<!--1st_voice_div-->   
+	<div class="bgcolorwhite" style="height:465px; padding:10px;" id="voicefirst">
+        <div class="allpaddingdivlogotop bgcolorwhite borderradiusdivtop2">
+            <div class="tbpaddingdiv1 textaligncenterdiv">
+                <img src="image/w5biglogo.png" border="0" name="w5desi" class="positionabsolute leftsidedivfiftyone">
+            </div>
+        </div>
+        
+        <div class="bgcolorlightsblue borderradiusdiv2">
+            <div class="lrtbpaddingdiv1 bottomchatborder colorwhite">
+                <div class="fl tbpaddingdiv2">
+                    <div class="rpaddingdiv1 fl">
+                        <img src="image/popupicon/voice.png" border="0" name="chaticon" />
+                    </div>
+                    <div class="fl fontssizediv9 headdingfonts tpaddingdiv1">
+                        Audio
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        
+            <div class="totalaligndiv tblrpaddingdiv1">
+                <div class="tbpaddingdiv1" id="firstwindow">
+                    <div class="bpaddingdiv2 textaligncenterdiv">
+                    	<div class="chatwindowleft fl">
+                        <input id="user_search" class="login_searchdivnew popuplogin" type="text" tabindex="5" placeholder="Type participants email id" name="user[search]" style="color:#FFF; padding:7px 9px;">
+                        </div>
+                        <div class="chatwindowname fl" id="inviteId">
+                        <input class="buttonbluedivnew1 submit large-12" type="button" value="Invite" name="submit" style="height:36px;" onclick="emailvalidate()" title="Invite Your Friend">
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="bpaddingdiv1 textaligncenterdiv fontssizediv9 fontweightbolddiv headdingfonts colorwhite">
+                   ------ or ------
+                    </div>
+                    <div class="bpaddingdiv1 textaligncenterdiv headdingfonts colorwhite">
+                  Copy & Send URL to your Friend
+                    </div>
+                    <div class="tbpaddingdiv1">
+                    <div class="chatwindowleft fl">
+                    <input id="user_name1" class="input-text text inputtextboxsizenew popuplogin borderradiusnone" type="text" tabindex="5" name="user[name]" style="background-color:transparent; color:#fff; padding:7px 9px; border-color:#fff; border-radius:0px; font-size:14px;">
+
+                    </div>
+                    <div class="chatwindowname fl" id="copyid">
+							<input class="buttonbluedivnew1 submit large-12" type="button" value="Copy & Send" name="submit" style="height:36px;"  id="d_clip_button" data-clipboard-target="user_name1" data-clipboard-text="Default clipboard text from attribute" title="Click here to Copy the URL" onclick="copysend()"/>
+                    </div>
+                    <div class="clear"></div>
+                  <div class="tpaddingdiv2 textaligncenterdiv" id="starttalkdtndiv" style="display:none;">
+                    <a class="btn signinbtndivone" role="button" id="audiobtn" style="margin-top:20px;">Start Audio</a>
+                    </div>
+                    <div class="tpaddingdiv2"></div>
+                </div>
+            </div>
+        </div>
+       </div> 
+	</div>
+<!--end_1st_voice_div-->   
+        <!--2nd_voice_code-->
+        <div class="bgcolorwhite displaydivnone" style="height:475px; padding:10px;" id="voicesecond">
+            <div class="allpaddingdivlogotop bgcolorwhite borderradiusdivtop2">
+                <div class="tbpaddingdiv1 textaligncenterdiv">
+                    <img src="image/w5biglogo.png" border="0" name="w5desi" class="positionabsolute leftsidedivfiftyone">
+                </div>
+            </div>
+            <div class="bgcolorlightsblue borderradiusdiv2">
+            	<div class="lrtbpaddingdiv1 bottomchatborder colorwhite">
+                	<div class="fl tbpaddingdiv2">
+                    	<div class="rpaddingdiv1 fl">
+                        	<img src="image/popupicon/voice.png" border="0" name="chaticon" />
+                        </div>
+                        <div class="fl fontssizediv9 headdingfonts tpaddingdiv1">
+                        	Audio
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="tbpaddingdiv2 fr" onclick="showvoicebox1()" id="closecall">
+                    	<a href="#" class="textdecorationnone">
+					<div class="rpaddingdiv1 fl"></div>
+                        <div class="fl fontssizediv9 headdingfonts tpaddingdiv1">
+                        	End Audio
+                        </div>
+                        <div class="clear"></div>
+                        </a>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="totalaligndiv tblrpaddingdiv1">
+                    <div class="totalaligndiv" >
+                        <!--voice_calling_div-->
+                        	<div style="min-height:250px;" class="overflowdivauto" id="writeText">
+                            	<div class="tpaddingdiv1 textaligncenterdiv" id="audio">
+                                	 <div style="width:200px;height:30px; background-color:#D8D8C5;margin-top:190px;position:absolute;margin-left:90px; display:none;" id="incomingCall">
+                                    <div id="right"><img src="image/correct.png" style="margin-top:1px;position:absolute;margin-left:-100px;"></div>
+                                       <div id="worng"><img src="image/cross.png" style="margin-top:4px;position:absolute;margin-left:-65px;"></div>
+                                        <div style="margin-top:6px;position:absolute;margin-left:70px;"><font style="font-size:18px;color:000;font-family:Times New Roman, Georgia, Serif;"><b>Incoming Call</b></font></div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--end_voice_calling_div-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end_2nd_video_code-->
+</div>
+</div>
+</div>
+<script src="js/RTC/mainaudio.js"></script>
+<script src="js/RTC/getMediaElement.js"></script>
+<script>
+window.onload=function()
+{ 
+    jQuery.ajax({
+    url:"https://w5capi-sig.w5rtc.com/socket.io/socket.io.js", dataType: "script",
+    success: function(){
+         console.clear();
+                       
+
+        jQuery.ajax({
+            cache: true,
+            url:"https://w5capi-cdn.w5rtc.com/capi?key="+document.capikey+'&v=1.3',
+            dataType: "script",
+            success: function(){console.log("loaded");audioCall();}
+        }); 
+
+    }
+    });
+
+}
+</script>
+
+</body>
+</html>
