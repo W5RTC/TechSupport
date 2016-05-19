@@ -17,9 +17,9 @@ How to Contribute Development of W5CAPI ?
     - [Local Machine](http://nodejs.com)
     - [Cloud](http://nodejs.com)
  3. **Execute Demos**
-     - [ Local Machine](http://nodejs.com)
+     - [ Local Machine](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/localmachine.md)
      - [Cloud](http://nodejs.com)
-     - [W5RTC Website](http://nodejs.com)
+     - [W5RTC Website](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/websitedemo.md)
  4. **Know Existing Features**
      - [Summary](http://nodejs.com)
      - [API (Application Program Interface)](http://nodejs.com)
@@ -38,8 +38,8 @@ How to Use W5CAPI Platform for Free
 For Startups - Development and early customer engagement you can for free.
 
   6. **Cloud For Free Joy!**
-     - [Create Login in W5RTC Website](http://nodejs.com)
-     - [Create W5CAPI license in W5CAPI Admin tool](http://nodejs.com)
+     - [Create Login in W5RTC Website](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/loginwebsite.md)
+     - [Create W5CAPI license in W5CAPI Admin tool](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/capilicense.md)
      - [Integrate License in your Application](http://nodejs.com)
      - [API (Application Programmable Interface)](http://nodejs.com)
  
