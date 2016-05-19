@@ -21,7 +21,7 @@ How to Contribute Development of W5CAPI ?
      - [Cloud](http://nodejs.com)
      - [W5RTC Website](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/websitedemo.md)
  4. **Know Existing Features**
-     - [Summary](http://nodejs.com)
+     - [Summary](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/summary.md)
      - [API (Application Program Interface)](http://nodejs.com)
  5. **Understand Folder and Files**
      - [W5capi Cloud](http://nodejs.com)
