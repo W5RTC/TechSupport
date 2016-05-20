@@ -15,7 +15,7 @@ How to Contribute Development of W5CAPI ?
     - [Automatic Cloud Installation](http://nodejs.com)
  2. **Create Licenses**.
     - [Local Machine](http://nodejs.com)
-    - [Cloud](http://nodejs.com)
+    - [Cloud](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/license_cloud.md)
  3. **Execute Demos**
      - [ Local Machine](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/localmachine.md)
      - [Cloud](http://nodejs.com)
