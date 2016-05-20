@@ -10,8 +10,8 @@ W5CAPI is a real time communication PaaS (Platform as a Service) product that ha
 How to Contribute Development of W5CAPI ?
 --------------------------
  1. **Setup Development Environment**
-    - [Local Machine Installation](http://nodejs.com)
-    - [Manual Cloud Installation](http://nodejs.com)
+    - [Local Machine Installation](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/development_local.md)
+    - [Manual Cloud Installation](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/development_cloud.md)
     - [Automatic Cloud Installation](http://nodejs.com)
  2. **Create Licenses**.
     - [Local Machine](http://nodejs.com)
