@@ -27,7 +27,7 @@ How to Contribute Development of W5CAPI ?
      - [W5capi Cloud](http://nodejs.com)
      - [W5capi API](http://nodejs.com)
  6. **Develop New Features**
-     - [Github Usage](http://nodejs.com)
+     - [Github Usage](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/contributing.md)
      - [Folder Structure](http://nodejs.com)
      - [Development Instructions](http://nodejs.com)
      - [Build Instructions](http://nodejs.com)
