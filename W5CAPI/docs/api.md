@@ -11,7 +11,7 @@ Method to construct a w5rtc user object. It takes the API-Key as an argument, wh
 
 ### 2.onSuccess(callback)
 #### 2.1 Description
-    This API takes a callback function as an argument. The users can implement their own application logic and add callback.
+This API takes a callback function as an argument. The users can implement their own application logic and add callback.
     
 #### 2.2 Return    
     W5Peer object.   
