@@ -24,11 +24,11 @@ How to Contribute Development of W5CAPI ?
      - [Summary](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/summary.md)
      - [API (Application Program Interface)](http://nodejs.com)
  5. **Understand Folder and Files**
-     - [W5capi Cloud](http://nodejs.com)
-     - [W5capi API](http://nodejs.com)
+     - [W5capi Cloud](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/folder_structure.md)
+     - [W5capi API](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/folder_structure.md)
  6. **Develop New Features**
      - [Github Usage](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/contributing.md)
-     - [Folder Structure](http://nodejs.com)
+     - [Folder Structure](https://github.com/W5RTC/W5RTC_TechSupport/blob/master/W5CAPI/docs/folder_structure.md)
      - [Development Instructions](http://nodejs.com)
      - [Build Instructions](http://nodejs.com)
      - [Deployment and Testing](http://nodejs.com)
