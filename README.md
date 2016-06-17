@@ -10,11 +10,11 @@ The following protocol has to be followed while providing  details of the defect
  
 Enter the following details in the issue description
 
-W5RTC Product Name:
-W5RTC Product Version:
-Problem Description:
-Steps to Reproduce:
-Other Details:
+ W5RTC Product Name:
+ W5RTC Product Version:
+ Problem Description:
+ Steps to Reproduce:
+ Other Details:
   		  
 Thank you for raising a defect!
 
