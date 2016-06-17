@@ -6,15 +6,15 @@ Thank you for partnering with us!
   		  
 The following protocol has to be followed while providing  details of the defects when new issue is created:
   		  
-***Title :*** Enter the high level description of the problem in the github title textbox.
+***Title*** : Enter the high level description of the problem in the github title textbox.
  
 Enter the following details in the issue description
 
- W5RTC Product Name:
- W5RTC Product Version:
- Problem Description:
- Steps to Reproduce:
- Other Details:
+   - W5RTC Product Name:
+   - W5RTC Product Version:
+   - Problem Description:
+   - Steps to Reproduce:
+   - Other Details:
   		  
 Thank you for raising a defect!
 
