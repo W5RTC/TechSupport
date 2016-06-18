@@ -1,4 +1,5 @@
-function chatshare() {
+window.chatshare=function()
+{
     var params = {},
         r = /([^&=]+)=?([^&]*)/g;
 
@@ -35,7 +36,7 @@ function chatshare() {
         console.log(window.params.caller);
  w5capi.registerUserWithId(window.params.caller);
     });
-   
+
 
     //for generating url for remote side
     document.getElementById('user_name3').value = location.href.replace(location.search, '') + '?caller=' + window.params.callee + '&callee=' + window.params.caller;
@@ -66,15 +67,15 @@ function chatshare() {
         to: window.params.callee+document.capikey
     });
         });
-    
+
     //accept incomming call
      w5capi.onCall(function(data){
-            
+
             w5capi.accept(data);
         });
-        
-    
-   
+
+
+
     //.......some global variables declared...............
     var thankYouNotyDiv;
     var buttonDiv;
@@ -113,7 +114,7 @@ function chatshare() {
                 to: message.userid
             });
         }
-        //Remote client got msg from call initiator 
+        //Remote client got msg from call initiator
         if (message.enableButton1) {
             showchatbox();
             var div = document.createElement('div');
@@ -189,7 +190,7 @@ function chatshare() {
              @ Old Syntax
             */
             //w5capi.call(window.params.callee);
-            
+
             /*
              @ new Syntax
             */
@@ -225,7 +226,7 @@ function chatshare() {
              @ Old Syntax
             */
             //w5capi.call(window.params.callee);
-            
+
             /*
              @ new Syntax
             */
@@ -263,7 +264,7 @@ function chatshare() {
         appendDIV3(data.message, data.fullName);
     });
     */
-    
+
     /**
      @ New Syntax
     */
@@ -272,11 +273,11 @@ function chatshare() {
         showchatbox();
         appendDIV3(data.msg.message, data.msg.fullName);
     });
-    
+
     /**
      @ old Syntax
      */
-    
+
     //This event will handled when datachannel will be open.
     /*
     w5capi.on('datachannel-open', function() {
@@ -287,9 +288,9 @@ function chatshare() {
         showchatbox();
         document.getElementById('text-message').disabled = false;
     });
-    
-    
-   
+
+
+
     //This event is handling when datachannel is closed.
     w5capi.on('datachannel-close', function(event) {
         w5capi.channels.value = '';
@@ -297,11 +298,11 @@ function chatshare() {
 
     });
     */
-    
+
     /**
      @ new Syntax
      */
-    
+
      w5capi.onDatachannel(function(data){
         if(data.event==='open')
         {
@@ -317,8 +318,8 @@ function chatshare() {
         document.getElementById('text-message').disabled = true;
         }
     });
-    
-    
+
+
     //.......creating object for textarea and message box.
     var textMessage = document.getElementById('text-message');
     var messagesBox = document.getElementById('messages-box1');
@@ -351,7 +352,7 @@ function chatshare() {
                 message: this.value
             });
             */
-            
+
              /**
               @New Syntax
             */
@@ -371,10 +372,11 @@ function chatshare() {
         var namErr = /^[A-Za-z0-9_]{1,15}$/;
         console.log('hello', namErr.test(fullName));
         if (fullName == "") {
-            var n = noty({
+
+                    var n = noty({
                 text: 'Please enter your name and send..',
                 type: 'information',
-                dismissQueue: true,
+                dismissQueue:true,
                 layout: 'topCenter',
                 theme: 'defaultTheme',
                 buttons: [{
@@ -445,7 +447,7 @@ function chatshare() {
 
     }
 
-    //Providing the current time and date when user send msgs 
+    //Providing the current time and date when user send msgs
     function startDate() {
         var today = new Date();
         var d = today.getDate();
@@ -531,16 +533,16 @@ function chatshare() {
                 message: this.value
             });
             */
-            
+
              /**
               @New Syntax
             */
             w5capi.send({
                 fullName: document.getElementById('full-name').value,
-                message: this.value
+                message: textMessage.value
             });
-            
-            
+
+
             appendDIV4(textMessage.value);
             textMessage.value = '';
             textMessage.focus();
@@ -590,5 +592,4 @@ function chatshare() {
             });
         }
     });
-
 }

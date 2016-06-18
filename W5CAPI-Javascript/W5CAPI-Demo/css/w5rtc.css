@@ -1067,7 +1067,7 @@ img.btn_close {
 	}
 	
 .bgcolorlightsblue{
-	background-color:#3cb3ff;
+	background-color:#87B900;
 	}
 	
 .twitterbgcolor{
@@ -1941,7 +1941,7 @@ img.btn_close {
 #login_form .login_input { width: 220px; height: 33px; border: none; color: #000; text-align:center;padding:6px 5px 5px 5px; background: url(../image/inputboxbg.png) no-repeat; outline:none; }
 #login_form #login_submit { width: 82px; height: 32px; cursor: pointer; border: none; background: url(../image/search.png) no-repeat }
 #login_form #login_reset { width: 82px; height: 32px; cursor: pointer; border: none; background: url(../image/reset.png) no-repeat }
-.login_searchdivnew { width: 95%; height: 20px; border: none; padding:5px 5px 5px 5px; color:#fff; border:1px solid #fff; background-color:transparent; border-radius:0px; font-size:14px;}
+.login_searchdivnew { width: 95%; height: 20px; border: none; padding:7px 8px; color:#fff; border:1px solid #575C5F; background-color:transparent; border-radius:0px; font-size:14px;}
 .login_searchdivnew:focus{border:1px solid #fff; border-radius:0px; background-color:transparent;}
 
 .btncloseicon { width: 20px; height: 20px; border: none; color: #000; text-align:center; background: url(../image/closebtn.png) no-repeat; outline:none; cursor:pointer; }
@@ -4207,7 +4207,7 @@ display:none;
 	background-color:#fff;
 	display:inline-block;
 	cursor:pointer;
-	color:#3cb3ff;
+	color:#575C5F;
 	font-family:arial;
 	font-size:14px;
 	font-weight:bold;
@@ -4947,7 +4947,7 @@ a:hover.tooltipsnew1 span {
 	}
 	
 .leftbgcolordiv{
-	background-color:#008ce5;
+	background-color:#44494D;
 	}
 
 .trblbpaddingdiv3{

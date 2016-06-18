@@ -42,7 +42,7 @@ function shareScreen()
     
 
     //set extention ID
-    w5capi.extensionID(document.extensionid);
+    w5capi.extensionID('nlnfogneblaieieknkhaabhhendjdanf');
    /*
     @ New Syntax
     */
@@ -248,7 +248,7 @@ function shareScreen()
 {
 	console.error('poda');
 var installing=true;
-chrome.webstore.install('https://chrome.google.com/webstore/detail/'+document.extensionid,
+chrome.webstore.install('https://chrome.google.com/webstore/detail/nlnfogneblaieieknkhaabhhendjdanf',
                     function (arg) {
 				       setTimeout(function(){
 					   location.reload();
