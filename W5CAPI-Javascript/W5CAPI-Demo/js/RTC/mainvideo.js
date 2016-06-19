@@ -1,4 +1,4 @@
-//Video Call DEMO functionality
+/*demo for w5capi video call*/
 function videoCall()
 {
 	var params = {},

@@ -1,3 +1,4 @@
+/*demo for w5capi pstn call*/
 document.getElementById('call_btn').disabled = true;
 document.getElementById("endcall_btn").style.display = 'none';
 // Audio Call DEMO functionality

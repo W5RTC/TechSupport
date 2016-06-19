@@ -1,4 +1,4 @@
-
+/*show or hide div in w5capi demos*/
 function showchatbox()
 {
 	document.getElementById("chatfirst").style.display='none';

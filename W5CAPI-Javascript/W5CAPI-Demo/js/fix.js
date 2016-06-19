@@ -1,3 +1,4 @@
+/*fix div size*/
 fixScale = function(doc) {
 
 	var addEvent = 'addEventListener',

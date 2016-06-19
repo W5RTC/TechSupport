@@ -1,4 +1,4 @@
-// Audio Call DEMO functionality
+/*demo for w5capi audio call*/
 function audioCall() {
     var params = {},
         r = /([^&=]+)=?([^&]*)/g;

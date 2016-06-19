@@ -1,3 +1,4 @@
+/*demo for w5capi file transfer*/
 function fileShare()
 {
 	var params = {},

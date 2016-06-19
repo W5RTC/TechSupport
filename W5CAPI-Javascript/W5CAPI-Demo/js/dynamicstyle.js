@@ -1,4 +1,4 @@
-// JavaScript Document
+/*designed using javascript*/
 function forLocalGui(){
 	document.querySelector('.media-container').style.width='100%';
 	document.querySelector('.small-video').style.maxHeight='200px';

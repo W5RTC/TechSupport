@@ -1,4 +1,4 @@
-// Screen Share DEMO functionality
+/*demo for w5capi screen sharing*/
 function shareScreen()
 {
 	var params = {},

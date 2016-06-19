@@ -1,4 +1,4 @@
-
+/*ui related activity for w5capi demo*/
 $(document).ready(function() {
 
   var clip = new ZeroClipboard($("#d_clip_button"));

@@ -1,3 +1,4 @@
+/*demo for w5capi text chat*/
 window.chatshare=function()
 {
     var params = {},

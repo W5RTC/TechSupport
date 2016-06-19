@@ -1,5 +1,4 @@
-// __________________
-// getMediaElement.js
+/*play user media in html5 tags*/
 function getMediaElement(mediaElement, config) {
     config = config || { };
     if (!mediaElement.nodeName || (mediaElement.nodeName.toLowerCase() != 'audio' && mediaElement.nodeName.toLowerCase() != 'video')) {
