@@ -1,4 +1,4 @@
-#### This W5RTC Repository is dedicated for technical support. W5RTC cusomters, partners and associates can download the software, user manual, raise defects etc.
+#### This TestOnNeed Repository is dedicated for technical support. TestOnNeed cusomters, partners and associates can download the software, user manual, raise defects etc.
 
 Thank you for partnering with us!
 
@@ -10,8 +10,8 @@ The following protocol has to be followed while providing  details of the defect
  
 Enter the following details in the issue description
 
-   - W5RTC Product Name:
-   - W5RTC Product Version:
+   - TestOnNeed Product Name:
+   - TestOnNeed Product Version:
    - Problem Description:
    - Steps to Reproduce:
    - Other Details:
