@@ -1,0 +1,40 @@
+Go Lang Installation
+	Download Binary file
+	extract download file in /usr/local location
+	Export Location
+
+Docker Installation
+	https://docs.docker.com/install/linux/docker-ce/ubuntu/#install-from-a-package
+
+Docker Composer
+	https://docs.docker.com/compose/install/#upgrading
+
+Go:
+	wget https://dl.google.com/go/go1.10.3.linux-amd64.tar.gz
+	sudo tar -C /usr/local -xzf go1.10.3.linux-amd64.tar.gz
+	export PATH=$PATH:/usr/local/go/bin
+
+Docker:
+	Install using the repository
+		sudo apt-get update
+		sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+		curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+		sudo apt-key fingerprint 0EBFCD88
+		sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+	INSTALL DOCKER CE	
+		sudo apt-get update
+		sudo apt-get install docker-ce
+		sudo docker run hello-world
+Docker Composer
+	sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+	sudo chmod +x /usr/local/bin/docker-compose
+
+NODE.JS
+	curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+	sudo apt-get install -y nodejs
+
+
+fabric-samples 
+	git clone -b master https://github.com/hyperledger/fabric-samples.git
+	cd fabric-samples
+	curl -sSL http://bit.ly/2ysbOFE | bash -s 1.2.0-rc1
