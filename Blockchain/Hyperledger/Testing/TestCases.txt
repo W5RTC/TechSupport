@@ -45,11 +45,11 @@ Infrastructure Test Cases:
 			Solution : docker logs dev-peer0.org2.example.com-mycc-1.0
 
 Application testing
-	- Case10: New chaincode Instantiates
+	- Case1: New chaincode Instantiates
 			Syntax: peer chaincode instantiate -n mycc -v 0 -c '{"Args":["init","a","100","b","200"]}' -o 127.0.0.1:7050 -C ch1
-	- Case11: New chaincode Invoke 
+	- Case2: New chaincode Invoke 
 			Syntax: peer chaincode invoke -n Descriptionmycc -c '{"Args":["invoke","a","b","10"]}' -o 127.0.0.1:7050 -C ch1
-	- Case12: New chaincode Query
+	- Case3: New chaincode Query
 			Syntax: peer chaincode query -n mycc -c '{"Args":["query","a"]}' -o 127.0.0.1:7050 -C ch1
 Scripts:
 	gcc --version
